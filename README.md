@@ -1,23 +1,33 @@
-# Netshoes Cart Test
+# Netshoes Cart Test - Leonardo Morais
 
-## Expected result
+## Sobre o desenvolvimento deste teste
 
-* See a list of products;
-* Be able to add or remove items to the cart and get instant visual feedback;
-* See the products added to the cart.
+Para o desenvolvimento deste teste foi utilizado [React](https://facebook.github.io/react/) para componentizar a aplicação front-end e [Redux](http://redux.js.org/) para controle de estado da mesma. Os testes foram feitos com [Jest](https://facebook.github.io/jest/), [Chai](http://chaijs.com/) e [Enzyme](https://github.com/airbnb/enzyme) para os validar os componentes react.
 
-## Data
+## Configurações necessarias para execução
 
-The data we provide is a static JSON file under `/public/data`.
+### Dependências globais
 
-## Notes
+Instale todas as dependências globais através do terminal:
 
-* You can use whatever stack or tooling you want to help you;
-* Feel free to ask us questions during the process (but trust your guts, please!);
-* You should create a static server in order to access the JSON data provided.
+```cmd
+npm i -g babel-eslint@7.2.3 cross-env@5.0.0 identity-obj-proxy@3.0.0 jest@20.0.4 semistandard@11.0.0 webpack@3.5.3 webpack-dev-server@2.7.1 yarn@0.27.5
+```
 
-## Bonus
+### Instale o projeto
 
-* Persist data on page reload;
-* Test your code;
-* Instructions on how to build/run the project.
+Após clonar o repositório, acesse o diretório do projeto e execute o comando `yarn` no terminal.
+
+## Como subir a API de produtos
+
+Acesse o diretório `server` e execute o comando `yarn start` no terminal.
+
+## Como subir a aplicação
+
+Vá para o diretório do projeto e execute o comando `yarn start` no terminal.
+
+Após o webpack subir, acesse pelo seu navegador http://localhost:8080
+
+## Rodando os testes
+
+No diretório do projeto, execute o comando `yarn test:watch` no terminal.

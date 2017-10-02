@@ -1,0 +1,38 @@
+.cart {
+  @include user-select(none);
+  background-color: $dark-gray;
+  height: 100%;
+  right: -67.77%;
+  position: absolute;
+  top: 0;
+  box-shadow: -2px 0px 1px $light-gray;
+  width: 66.66%;
+  transition: .5s;
+  &.cartIsOpen {
+    right: 0;
+    .cart-action {
+      background: $yellow;
+      &:after {
+        content: "x";
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        line-height: 55px;
+      }
+    }
+  }
+}
+
+
+.cart-action {
+  position: absolute;
+  cursor: pointer;
+  top: 25px;
+  left: -100px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: $dark-gray url('./bag.svg') center no-repeat;
+  background-size: 40%;
+  border-radius: 50%;
+}

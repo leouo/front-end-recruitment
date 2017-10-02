@@ -1,0 +1,21 @@
+.shelf {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: stretch;
+  align-content: flex-start;
+  padding-top: 70px;
+}
+
+.shelf-item {
+  transition: 1s; 
+  cursor: pointer;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 33.33%;
+  
+  &:hover {
+    opacity: .9;
+  }
+}

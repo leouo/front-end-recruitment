@@ -1,0 +1,13 @@
+.item-amount {
+  color: $yellow;
+  font-size: 14px;
+  margin-top: 10px;
+
+  strong {
+    @include open-sans-bold();
+  }
+}
+
+:global(.remove) .item-amount {
+  text-decoration: line-through;
+}

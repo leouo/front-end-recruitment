@@ -1,0 +1,8 @@
+.product-installments {
+  color: $light-gray;
+  font-size: 14px;
+
+  strong {
+    @include open-sans-semi-bold();
+  }
+}

@@ -1,0 +1,10 @@
+.item-remove {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+
+  &:hover {
+    color: #fff;
+  }
+}

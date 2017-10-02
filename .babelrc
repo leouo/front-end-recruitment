@@ -1,0 +1,45 @@
+{
+  "presets": [
+    "env",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "react-hot-loader/babel",
+    "transform-decorators-legacy",
+    ["transform-runtime", {
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true
+    }],
+    ["import", {
+      "libraryName": "antd",
+      "style": "css"
+    }],
+    ["module-resolver", {
+      "root": ["./resources/js"],
+      "alias": {
+        "Configs": "config",
+        "Actions": "actions",
+        "ActionTypes": "actions/ActionTypes",
+        "Reducers": "reducers",
+        "RootRoute": "routes",
+        "Store": "store",
+        "Components": "components",
+        "Utils": "helpers/Utils",
+        "Request": "helpers/Request"
+      }
+    }],
+    ["react-css-modules", {
+      "context": "./resources",
+      "generateScopedName": "[local]-[hash:base64:5]",
+      "filetypes": {
+        ".scss": {
+          "syntax": "postcss-scss"
+        }
+      },
+      "webpackHotModuleReloading": true
+    }]
+  ]
+}

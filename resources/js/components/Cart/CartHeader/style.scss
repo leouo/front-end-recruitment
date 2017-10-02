@@ -1,0 +1,28 @@
+.cart-header {
+  padding-bottom: 50px;
+  padding-top: 40px;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.cart-title {
+  @include open-sans-bold();
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+
+.icon-bag {
+  background: url('../bag.svg') 0 0 no-repeat;
+  display: inline-block;
+  height: 40px;
+  margin-right: 30px;
+  position: relative;
+  width: 34px;
+  top: 8px;
+}

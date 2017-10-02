@@ -1,0 +1,10 @@
+.product-photo {
+  margin-right: 1rem;
+
+}
+
+:global(.cart) .product-photo {
+  &, img {
+    float: left;
+  }
+}

@@ -1,0 +1,20 @@
+:global(.catalog) {
+  .product-name {
+    color: $gray;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
+
+:global(.cart) {
+  .product-name {
+    @include open-sans-semi-bold();
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+:global(.remove) .product-name {
+  text-decoration: line-through;
+}

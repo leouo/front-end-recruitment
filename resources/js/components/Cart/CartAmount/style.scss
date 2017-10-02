@@ -1,0 +1,34 @@
+.cart-amount {
+  border-top: 2px solid $darker-gray;
+  padding: 20px  1rem 10px;
+}
+
+.cart-amount-label {
+  color: $light-gray;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+}
+
+.cart-amount-subtotal {
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+}
+
+.cart-amount-value {
+  color: $yellow;
+  font-size: 24px;
+
+  strong {
+    @include open-sans-bold();
+  }
+}
+
+.cart-amount-installments {
+  color: $light-gray;
+  font-size: 12px;
+  text-transform: uppercase;
+}

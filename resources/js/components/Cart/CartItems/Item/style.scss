@@ -1,0 +1,21 @@
+.cart-item {
+  padding: 1rem;
+  border-top: 2px solid $darker-gray;
+}
+
+:global(.remove) {
+  background: #121215;
+  opacity: .7;
+}
+
+.cart-left {
+  display: inline-block;
+  width: 80%;
+}
+
+.cart-right {
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+  vertical-align: top;
+}

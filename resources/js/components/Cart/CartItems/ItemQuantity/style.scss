@@ -1,0 +1,8 @@
+.item-quantity {
+  color: $light-gray;
+  font-size: 12px;
+}
+
+:global(.remove) .item-quantity {
+  text-decoration: line-through;
+}

@@ -1,0 +1,13 @@
+.cart-buy {
+  @include open-sans-bold();
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 0 2px 1px $darker-gray;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  width: calc(100% - 2rem);
+  margin: 30px 1rem 0;
+}

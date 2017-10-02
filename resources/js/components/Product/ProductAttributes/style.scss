@@ -1,0 +1,21 @@
+.product-atrribute {
+  color: $light-gray;
+  font-size: 12px;
+  display: inline-block;
+  &:after {
+    content: '|';
+    margin: 0 5px;
+    display: inline-block;
+  }
+}
+
+.product-atrribute:last-of-type {
+  border: 0;
+  &:after {
+    content: '';
+  }
+}
+
+:global(.remove) .product-atrribute {
+  text-decoration: line-through;
+}
